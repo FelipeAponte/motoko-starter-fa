@@ -52,7 +52,7 @@ actor class Homework() {
       completed = true;
     };
 
-    homeworkDiary.put(id, hw);
+    homeworkDiary.put(id, complete);
     return #ok();
   };
 
