@@ -80,7 +80,7 @@ actor class StudentWall() {
     };
   };
 
-  // Voting
+  // Voting Up
   public func upVote(messageId : Nat) : async Result.Result<(), Text> {
     switch(wall.get(messageId)){
       case(null){return #err("id not found")};
@@ -96,6 +96,7 @@ actor class StudentWall() {
     };
   };
 
+  // Voting Down
   public func downVote(messageId : Nat) : async Result.Result<(), Text> {
     switch(wall.get(messageId)){
       case(null){return #err("id not found")};
